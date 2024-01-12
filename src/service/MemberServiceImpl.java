@@ -7,11 +7,17 @@ import java.util.ArrayList;
 public class MemberServiceImpl implements MemberService {
     @Override
     public String greet(int i) {
-        return null;
+        String[] greetings = {"Good Morning", "Hello", "Good evening"};
+        return greetings[i];
     }
 
     @Override
     public ArrayList<Member> getAll() {
-        return null;
+        ArrayList<Member> list = new ArrayList<>();
+        Member mem1 = new Member(1, "Linda", "linda@example.com");
+        Member mem2 = new Member(2, "James", "james@example.com");
+        list.add(mem1);
+        list.add(mem2);
+        return list;
     }
 }
