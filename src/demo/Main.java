@@ -14,5 +14,7 @@ public class Main {
         for(Member mem :list) {
             System.out.println(mem.getId() + mem.getName() + "," + mem.getEmail());
         }
+
+        System.out.println(service.sumOf(3, 5));
     }
 }
